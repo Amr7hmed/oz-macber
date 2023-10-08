@@ -1,0 +1,109 @@
+// B- Genaral Classes .
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family-lato);
+  background-color: #ffffff;
+  direction: ltr;
+}
+.owl-stage-outer {
+  direction: ltr !important;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  background-color: inherit;
+  color: inherit;
+}
+button:focus {
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn-action {
+  border: 1px solid var(--border-300);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  padding: 10px 40px;
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-16);
+}
+.border-left {
+  border-left: 2px solid var(--border-100);
+}
+.border-right {
+  border-right: 2px solid var(--border-100);
+}
+.row {
+  margin: 0px;
+}
+input {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.title {
+  padding: 50px 0px;
+  border-top: 2px solid var(--border-100);
+  border-bottom: 2px solid var(--border-100);
+  h3 {
+    font-size: 70px;
+    font-family: var(--font-family-qwigley);
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+@media screen and(max-width: 992px) {
+  .border-right,
+  .border-left {
+    border: none;
+  }
+  .title {
+    padding: 30px 0px;
+    h3 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .title {
+    padding: 30px 0px;
+    h3 {
+      font-size: 50px;
+    }
+  }
+}

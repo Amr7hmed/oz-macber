@@ -1,0 +1,111 @@
+/*
+// A- Over Growing Section Style 
+      A-1- Over Growing Section Style Content
+// B- Over Growing Section Style Responsive
+    B-1- Over Growing Section Style Responsive Screen 992px
+    B-2- Over Growing Section Style Responsive Screen 400px
+*/
+
+// A- Over Growing Section Style
+.over-growing {
+  padding: 50px 0px;
+  // A-1- Over Growing Section Style Content
+  .content {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-lato);
+    h4 {
+      font-size: var(--font-size-36);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: var(--font-weight-900);
+      color: var(--dark-300);
+      margin-bottom: 0px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      li {
+        display: flex;
+        align-items: center;
+        &:last-of-type {
+          .line {
+            display: none;
+          }
+        }
+        img {
+          width: 110px;
+          height: 110px;
+          margin: 0px 30px;
+        }
+        .line {
+          width: 2px;
+          height: 70px;
+          background-color: var(--border-100);
+          display: block;
+        }
+      }
+    }
+  }
+}
+// B- Over Growing Section Style Responsive
+// B-1- Over Growing Section Style Responsive Screen 992px
+@media screen and(max-width: 992px) {
+  .over-growing {
+    padding: 40px 0px;
+    .content {
+      width: 80%;
+      ul {
+        margin-top: 80px;
+        li {
+          img {
+            width: 110px;
+            height: 110px;
+            margin: 0px 30px;
+          }
+          .line {
+            width: 2px;
+            height: 70px;
+            background-color: var(--border-100);
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+// B-2- Over Growing Section Style Responsive Screen 400px
+@media screen and(max-width: 400px) {
+  .over-growing {
+    padding: 30px 0px;
+    .content {
+      width: 90%;
+      h4 {
+        font-size: 20px;
+      }
+      ul {
+        margin-top: 0px;
+        flex-direction: column;
+        li {
+          flex-direction: column;
+          img {
+            width: 80px;
+            height: 90px;
+            margin: 20px 0px;
+          }
+          .line {
+            width: 100px;
+            height: 2px;
+          }
+        }
+      }
+    }
+  }
+}

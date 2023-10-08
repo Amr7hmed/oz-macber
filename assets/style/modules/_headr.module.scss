@@ -1,0 +1,140 @@
+/*
+// A- Header Section Style 
+     A-1- Header Section Style Content
+
+// B- Header Section Style Responsive
+    B-1- Header Section Style Responsive Screen 576px
+    B-2- Header Section Style Responsive Screen 400px
+
+*/
+// A- Header Section Style
+header.header {
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  // A-1- Header Section Style Content
+  .content {
+    position: absolute;
+    bottom: 90px;
+    left: 90px;
+    z-index: 1;
+    width: 70%;
+    h3 {
+      font-family: var(--font-family-qwigley);
+      font-size: 80px;
+      font-weight: var(--font-weight-500);
+      color: #c8cd05;
+      margin-bottom: 0px;
+    }
+    h6 {
+      font-family: var(--font-family-lato);
+      font-size: var(--font-size-36);
+      font-weight: 700;
+      color: var(--text-light-100);
+      margin-bottom: 25px;
+    }
+    p {
+      font-family: var(--font-family-lato);
+      font-size: var(--font-size-14);
+      font-weight: var(--font-weight-500);
+      color: var(--text-light-400);
+      margin-bottom: 25px;
+      width: 50%;
+    }
+    ul {
+      display: flex;
+      li {
+        &:first-child {
+          margin-right: 20px;
+        }
+        a {
+          font-family: var(--font-family-lato);
+          font-size: var(--font-size-16);
+          font-weight: 700;
+          color: var(--text-light-100);
+          border-color: var(--text-light-100);
+          &:hover {
+            border-color: var(--text-light-100);
+            color: var(--text-light-100);
+          }
+        }
+        .btn-action-play-video {
+          display: flex;
+          background-color: transparent;
+          border: none;
+          color: var(--text-light-100);
+          .image {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%) sepia(21%) saturate(0%) hue-rotate(263deg)
+              brightness(113%) contrast(100%) !important;
+            -webkit-filter: invert(100%) sepia(21%) saturate(0%)
+              hue-rotate(263deg) brightness(113%) contrast(100%) !important;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-right: 10px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// B- Header Section Style Responsive
+// B-1- Header Section Style Responsive Screen 576px
+@media screen and(max-width: 576px) {
+  header.header {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .content {
+      bottom: 90px;
+      left: 5%;
+      width: 90%;
+      h3 {
+        font-size: 60px;
+      }
+      h6 {
+        font-size: 30px;
+      }
+      p {
+        width: 90%;
+      }
+      ul {
+        display: flex;
+        li {
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// B-2- Header Section Style Responsive Screen 400px
+@media screen and(max-width: 400px) {
+  header.header {
+    .content {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          &:first-child {
+            margin-right: 0px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

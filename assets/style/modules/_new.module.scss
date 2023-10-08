@@ -1,0 +1,113 @@
+/*
+// A- New Section Style 
+     A-1- New Section Style Content
+
+// B- New Section Style Responsive
+    B-1- New Section Style Responsive Screen 992px
+    B-2- New Section Style Responsive Screen 576px
+
+*/
+
+// A- New Section Style
+.new-section {
+  padding: 100px 0px;
+  background-color: var(--dark-300);
+  // A-1- New Section Style Content
+  .content {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-lato);
+    h4 {
+      font-size: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: var(--font-weight-900);
+      color: var(--text-light-100);
+    }
+    p {
+      margin: 30px 0px;
+      font-size: var(--font-size-16);
+      color: #a1a1a1;
+    }
+    .linkes {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto;
+      li {
+        &:nth-child(2) {
+          margin: 0px 50px;
+        }
+      }
+      a {
+        font-size: var(--font-size-16);
+        color: var(--text-light-100);
+        border: 1px solid var(--text-light-100);
+        padding: 10px 20px;
+        min-width: 200px;
+        max-width: auto;
+      }
+    }
+  }
+}
+
+// B- New Section Style Responsive
+// B-1- New Section Style Responsive Screen 992px
+@media screen and(max-width: 992px) {
+  .new-section {
+    padding: 70px 0px;
+    .content {
+      width: 70%;
+      h4 {
+        font-size: 40px;
+      }
+      p {
+        margin: 20px 0px;
+      }
+      .linkes {
+        width: 95%;
+        flex-direction: column;
+        li {
+          &:nth-child(2) {
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+// B-2- New Section Style Responsive Screen 576px
+@media screen and(max-width: 576px) {
+  .new-section {
+    padding: 50px 0px;
+    .content {
+      width: 90%;
+      h4 {
+        font-size: 24px;
+      }
+      p {
+        font-size: var(--font-size-14);
+        margin-bottom: 30px;
+      }
+      .linkes {
+        width: 95%;
+        flex-direction: column;
+        li {
+          &:nth-child(2) {
+            margin: 20px 0px;
+          }
+          a {
+            font-size: var(--font-size-14);
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

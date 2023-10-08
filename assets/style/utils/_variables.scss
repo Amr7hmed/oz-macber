@@ -1,0 +1,73 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+//BEGIN Global Variables
+:root {
+  --text-light-100: #ffffff;
+  --text-light-200: #f9fafc;
+  --text-light-300: #f9fafb;
+  --text-light-400: #b5b7bf;
+  --text-light-500: #767676;
+
+  --bg-light-100: #f4f6fd;
+  --bg-light-200: #bfbfbf;
+
+  --btn-light-100: #ebebeb;
+  --btn-light-200: #838385;
+
+  --green-200: #67c18c;
+
+  --yellow-200: #ffb547;
+
+  --red-300: #fca5a5;
+  --red-400: #e31a1a;
+  --red-500: #ef4444;
+  --red-600: #dc3545;
+  --red-700: #ff1010;
+
+  --border-100: #d5d5d5;
+  --border-200: #c0c0c0;
+  --border-300: #000000;
+
+  --dark-100: #8d8a8a;
+  --dark-200: #333333;
+  --dark-300: #000000;
+
+  --navbar-height: 6rem;
+  --navbar-mobile-bg: #1d1e1f;
+
+  --bg-skeleton: #36383a;
+  --accent-skeleton: hsla(206, 4%, 42%, 0.5);
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+
+  --font-weight-normal: normal;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-900: 900;
+
+  --font-family-lato: "Lato", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-qwigley: "Qwigley", cursive;
+}
+
+// Screen Break Points
+// Taken from tailwindCSS https://tailwindcss.com/docs/screens
+$screen-xs: 475px;
+$screen-sm: 575px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xlg: 1024px;
+$screen-2xl: 1200px;
+$screen-3xl: 1536px;
+
+//END Global Variables
